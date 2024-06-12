@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramen Wiki</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<header>
+    <h1>All about</h1>
+    <h1>Ramen</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li><a href="home.html">🍜 About</a></li>
+        <li><a href="origin.html">🏯 Origin</a></li>
+        <li><a href="preparation.html">👨‍🍳 Preparation</a></li>
+        <li><a href="culture.html">🎬 Culture</a></li>
+    </ul>
+    <img src="moon.png" id="icon">
+  </nav>
+  
+  <article>
+    <h1>🏯 Origin</h1>
+    <p><em>The origins of ramen are a blend of cultural exchange and culinary innovation.</em></p>
+    <p>While the dish we know today is 
+        deeply rooted in Japanese cuisine, ramen's story begins with Chinese immigrants who brought their noodle-making
+         techniques to Japan in the late 19th century. Initially known as "shina soba" (Chinese noodles), ramen evolved 
+         significantly during the early 20th century, especially after World War II when wheat became more accessible. 
+         Over time, regional variations emerged, each with unique broths, noodles, and toppings. Ramen's journey from a 
+         humble street food to a global culinary phenomenon reflects its adaptability and the creative spirit of those 
+         who have contributed to its evolution.</p>
+
+    <img src="https://ramenyokocho.com/packs/media/images/ramen-history/ramen_map@2x-96bfd07b11aaa2c43e1c1b226c8d6928.jpg" 
+        alt="Ramen Origin Map"
+        class="responsive">
+  </article>
+
+</section>
+
+<footer> </footer>
+<script>
+
+    var icon = document.getElementById("icon");
+    
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "sun.png";
+        }else{
+            icon.src = "moon.png";
+        }    
+        }
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramen Wiki</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<header>
+    <h1>All about</h1>
+    <h1>Ramen</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li><a href="home.html">🍜 About</a></li>
+        <li><a href="origin.html">🏯 Origin</a></li>
+        <li><a href="preparation.html">👨‍🍳 Preparation</a></li>
+        <li><a href="culture.html">🎬 Culture</a></li>
+    </ul>
+    <img src="moon.png" id="icon">
+  </nav>
+  
+  <article>
+    <h1>🎬 Culture</h1>
+    <p>
+        Ramen has become a prominent symbol in pop culture, frequently appearing in movies, TV shows, 
+        and anime, reflecting its widespread appeal and cultural significance. In the world of anime, 
+        series like <em>Naruto</em> feature characters with a deep love for ramen, highlighting the dish's 
+        role in everyday Japanese life. Ramen-themed restaurants and pop-up shops have become trendy 
+        in cities worldwide, showcasing the dish's international popularity.
+    </p>
+    <p> Additionally, ramen has inspired numerous cookbooks, documentaries, and social media trends, cementing its status as 
+        a beloved and influential culinary icon.</p>
+        <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F04%2Fnaruto-ramen-ichiraku-official-twtr.jpg?w=1080&cbr=1&q=90&fit=max" 
+        alt="Naruto Ramen"
+        class="responsive">
+  </article>
+
+</section>
+<footer> </footer>
+<script>
+
+    var icon = document.getElementById("icon");
+    
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "sun.png";
+        }else{
+            icon.src = "moon.png";
+        }    
+        }
+    
+    </script>
+</body>
+</html>

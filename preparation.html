@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ramen Wiki</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<header>
+  <h1>All about</h1>
+  <h1>Ramen</h1>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li><a href="home.html">🍜 About</a></li>
+        <li><a href="origin.html">🏯 Origin</a></li>
+        <li><a href="preparation.html">👨‍🍳 Preparation</a></li>
+        <li><a href="culture.html">🎬 Culture</a></li>
+    </ul>
+    <img src="moon.png" id="icon">
+  </nav>
+  
+  <article>
+    <h1>👨‍🍳 Preparation</h1>
+    <p>Cooking ramen the traditional way is both an art and a science, requiring attention to detail and a passion for flavor.</p>
+    <p>Here are the key steps:</p>
+    <ol>
+        <li>
+           <strong>Broth Preparation:</strong> The heart of any ramen dish is its broth, which can be based on chicken, pork, beef, or seafood. 
+            The broth is simmered for hours, sometimes even days, to extract deep, rich flavors. Common types include shoyu (soy sauce), 
+            miso, shio (salt), and tonkotsu (pork bone).
+        </li>
+        <li>
+            <strong>Noodle Making:</strong> Traditional ramen noodles are made from wheat flour, water, salt, and kansui (a type of alkaline mineral water).
+             Kansui gives the noodles their distinct chewiness and yellow hue. The dough is kneaded, rested, and rolled before being cut 
+             into thin strands.
+        </li>
+        <li>
+            <strong>Toppings Preparation:</strong> Toppings vary widely but often include chashu (braised pork belly), marinated soft-boiled eggs, nori,
+             menma, and green onions. Each topping is prepared with care to enhance the overall dish.
+        </li>
+        <li>
+            <strong>Assembly:</strong> The cooked noodles are placed in a bowl, followed by the hot broth and toppings. Each component is arranged thoughtfully 
+            to create a visually appealing and balanced dish.
+        </li>
+    </ol>
+    <img src="https://www.wenthere8this.com/wp-content/uploads/2021/01/ingredients-for-spicy-chicken-ramen.jpg" 
+    alt="Ramen Ingredients"
+    class="responsive">
+  </article>
+
+</section>
+<footer> </footer>
+<script>
+
+    var icon = document.getElementById("icon");
+    
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "sun.png";
+        }else{
+            icon.src = "moon.png";
+        }    
+        }
+    
+    </script>
+</body>
+</html>
